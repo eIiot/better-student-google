@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Student Google</title>
+
+  <link rel="stylesheet" href="./tailwind.css">
+</head>
+<body>
+  <!-- Simple Centered Search Bar -->
+  <div class="flex flex-col justify-center items-center h-screen">
+    <h1 class="text-4xl font-bold text-center">Better Student <a class="text-[#4285F4]">G</a><a class="text-[#DB4437]">o</a><a class="text-[#F4B400]">o</a><a class="text-[#4285F4]">g</a><a class="text-[#0F9D58]">l</a><a class="text-[#DB4437]">e</a></h1>
+
+    <!-- Input Felid -->
+    <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-2/3 appearance-none leading-normal m-3" type="text" placeholder="" id="search-bar">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg" type="submit" id="search-button">
+      Search
+    </button>
+    
+    <div class="max-w-md m-10 text-center">
+      <p><b>Why?</b></p>
+      I was tired of searching for chemistry help, but only getting results from sites like chegg and bartleby, where you can't actually view the answer. This site simply generates a google search result with those sites emitted. To request a site be added to the filter, please submit an <a class="text-cyan-500" href=https://github.com/eiiot/better-student-google/issues>issue on GitHub</a>.
+    </div>
+  </div>
+
+</body>
+<script src="./index.js"></script>
+</html>

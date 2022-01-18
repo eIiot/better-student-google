@@ -8,6 +8,10 @@ const blockedSites = [
 // generate blocked site string
 let blockedSitesString = '';
 
+blockedSites.forEach((site) => {
+  blockedSitesString += `-site:${site} `;
+});
+
 function google(query) {
   window.location.href = `https://www.google.com/search?q=${query} ${blockedSitesString}`;
 }
@@ -24,10 +28,6 @@ const searchBar = document.querySelector('#search-bar');
 const searchButton = document.querySelector('#search-button');
 
 // * Search
-
-blockedSites.forEach((site) => {
-  blockedSitesString += `-site:${site} `;
-});
 
 // on search button click or enter key press, search google for the query
 searchButton.addEventListener('click', () => {

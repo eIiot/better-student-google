@@ -2,8 +2,9 @@ const blockedSites = [
   'chegg.com',
   'chegg.org',
   'bartleby.com',
-  'numerade.com/ask'
-  'homeworklib.com'
+  'numerade.com/ask',
+  'homeworklib.com',
+  'coursehero.com'
 ];
 
 // generate blocked site string

@@ -1,0 +1,20 @@
+name: Website Request
+description: Request a website be excluded from the search
+title: "[Request]: "
+labels: ["request"]
+assignees:
+  - eiiot
+body:
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      description: The URL of the website that you are requesting be blocked. Please exclude any sub-pages
+      placeholder: ex. chegg.com
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reasoning
+      description: Please describe why this website should be blacklisted (paywall, spam, etc)

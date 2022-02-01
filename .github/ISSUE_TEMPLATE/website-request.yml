@@ -9,8 +9,8 @@ body:
     id: website
     attributes:
       label: Website URL
-      description: The URL of the website that you are requesting be blocked. Please exclude any sub-pages
-      placeholder: ex. chegg.com
+      description: The URL of the website that you are requesting be blocked. Please include the question
+      placeholder: ex. https://study.com/academy/answer/generally-if-the-concentration-or-temperature-of-the-reactants-were-increased-what-would-happen-to-the-enthalpy-diagram-what-would-happen-to-the-energies-of-reactants-products-and-activated-complex-and-to-the-rate.html
     validations:
       required: true
   - type: textarea
@@ -18,3 +18,8 @@ body:
     attributes:
       label: Reasoning
       description: Please describe why this website should be blacklisted (paywall, spam, etc)
+  - type: textarea
+    id: image
+    attributes:
+      label: Screenshot/Image
+      description: Please upload a screenshot/image of the paywall/issue
